@@ -21,4 +21,14 @@ public class Shop {
         this.refunds = refunds;
     }
 
+    public String getShopname() {
+        return shopname;
+    }
+
+    public int getShopBalance() {
+        return shopBalance;
+    }
+
+
+
 }
