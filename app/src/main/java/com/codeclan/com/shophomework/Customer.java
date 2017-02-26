@@ -31,4 +31,13 @@ public class Customer {
     public void setCash(int cash) {
         this.cash = cash;
     }
+
+    public void buyItem(int purchase){
+        this.cash -= purchase;
+
+    }
+
+    public void getRefund(int refund) {
+        this.cash += refund;
+    }
 }

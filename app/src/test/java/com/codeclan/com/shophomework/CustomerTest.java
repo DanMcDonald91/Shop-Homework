@@ -30,5 +30,20 @@ public class CustomerTest {
         assertEquals(400, customer2.getCash());
     }
 
+    @Test
+    public void customerBuysItem() {
+        customer1.buyItem(50);
+        assertEquals(250, customer1.getCash());
+
+    }
+
+    @Test
+    public void customerRefund() {
+        customer2.buyItem(50);
+        customer2.getRefund(50);
+        assertEquals(400, customer2.getCash());
+
+    }
+
 
 }
