@@ -24,4 +24,11 @@ public class CustomerTest {
     public void customerHasName() {
         assertEquals("Pierre", customer1.getName());
     }
+
+    @Test
+    public void customerHasCash() {
+        assertEquals(400, customer2.getCash());
+    }
+
+
 }
