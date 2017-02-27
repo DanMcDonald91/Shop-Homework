@@ -1,3 +1,5 @@
+
+
 package com.codeclan.com.shophomework;
 
 import java.util.ArrayList;
@@ -8,26 +10,37 @@ import java.util.ArrayList;
 
 public class Shop {
 
-    private String shopname;
+    private String shopName;
     private int shopBalance;
     private ArrayList<Integer> sales;
     private ArrayList<Integer> refunds;
 
-    public Shop(String shopname, int shopBalance, ArrayList<Integer> sales, ArrayList<Integer> refunds) {
+    public Shop(String shopName, int shopBalance, ArrayList<Integer> sales, ArrayList<Integer> refunds) {
 
-        this.shopname = shopname;
+        this.shopName = shopName;
         this.shopBalance = shopBalance;
         this.sales = sales;
         this.refunds = refunds;
     }
 
-    public String getShopname() {
-        return shopname;
+    public String getShopName() {
+        return shopName;
     }
 
     public int getShopBalance() {
         return shopBalance;
     }
+
+    public void shopSellsItems(int items, Customer customer) {
+
+        customer.buyItem(items);
+        this.shopBalance += items;
+        this.sales.add(items);
+    }
+
+
+
+
 
 
 
